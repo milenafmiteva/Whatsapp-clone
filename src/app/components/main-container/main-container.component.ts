@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContainerComponent implements OnInit {
 
+  seedValue: string;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  seedData(ev: string): void {
+    this.seedValue = ev;
+  }
 }
